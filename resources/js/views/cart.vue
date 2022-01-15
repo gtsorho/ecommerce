@@ -18,7 +18,7 @@
                 <div class="card mb-3 border-0" style="max-width: 540px;">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img :src="item.image" class="img-fluid rounded-start">
+                            <img :src="item.image" class="img-fluid rounded-bottom">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
@@ -54,6 +54,7 @@
 </div>
 </template>
 <script>
+import { useRoute } from 'vue-router'
 export default {
 data() {
     return {
@@ -91,6 +92,10 @@ data() {
             ]
         }
     },
+    mounted(){
+        const route = useRoute()
+        console.log(route.query)
+    },
     computed:{
         subTotal(){
             const unit_items = [];
@@ -120,5 +125,9 @@ data() {
     }
     a:hover{
         color: #212c25 !important;
+    }
+    .rounded-bottom{
+        border-bottom-left-radius: 2.5rem !important;
+        border-top-right-radius: 2.5rem;
     }
 </style>

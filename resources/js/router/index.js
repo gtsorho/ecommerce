@@ -4,6 +4,7 @@ import About from '../views/about.vue'
 import Product from '../views/product.vue'
 import Cart from '../views/cart.vue'
 import Details from '../views/details.vue'
+import NotFound from '../views/pageNotFound.vue'
 
 
 const routes = [
@@ -32,6 +33,11 @@ const routes = [
         path: '/details',
         name: 'Details',
         component: Details
+    },
+    {
+        path: '/:catchAll(.*)',
+        name: 'NotFound',
+        component: NotFound
     },
 ]
 

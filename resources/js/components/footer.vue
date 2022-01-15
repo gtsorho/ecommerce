@@ -1,15 +1,15 @@
 <template>
 <hr>
     <div class=" footer-container ">
-        <footer class="pt-5 mx-5">
+        <footer class="pt-2 mx-5">
             <div class="row">
             <div class="col-4">
                 <h2>LOGO</h2>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             </div>
-            <div class="col-2">
+            <div class="col">
                 <h5>Pages</h5>
-                <ul class="nav flex-column">
+                <ul class="nav flex-column ">
                     <li class="nav-item">
                         <router-link class="ps-0" :to="{name:'Home', hash:'#home'}">Home</router-link>
                     </li>
@@ -22,15 +22,17 @@
                 </ul>
             </div>
 
-            <div class="col-2">
-                <h5>Contact us</h5>
-                <ul class="nav flex-column">
+            <div class="col">
+                <address>
+                    <h5>Contact us</h5>
+                <ul class="nav flex-column ">
                 <li class="nav-item mb-2"><p class="p-0 fw-bolder text-success">Phone</p></li>
                 <li class="nav-item mb-2"><p class="p-0 text-muted">+233 50 892 4141</p></li>
                 <li class="nav-item mb-2"><p class="p-0 text-muted">+233 54 406 9203 </p></li>
                 <li class="nav-item mb-2"><p class="p-0 fw-bolder text-success">Email</p></li>
                 <li class="nav-item mb-2"><p class="p-0 text-muted">info@stores.com</p></li>
                 </ul>
+                </address>
             </div>
             <div class="col offset-1">
                 <form >
@@ -45,7 +47,7 @@
             </div>
             </div>
 
-            <div class="d-flex justify-content-between py-4 mt-4 border-top">
+            <div class="d-flex justify-content-between pt-2 mt-4 border-top">
             <p>&copy; 2021 Company, Inc. All rights reserved.</p>
             <ul class="list-unstyled d-flex">
                 <li class="ms-3"><a class="link-dark" href="#"><i class="bi fs-3 bi-facebook"></i></a></li>
@@ -62,6 +64,9 @@ export default {
 }
 </script>
 <style scope>
+.footer-container ul {
+    line-height: 0.25rem!important;
+}
 /* .footer-container{
         box-shadow:0 -6px 7px 0 rgb(0 0 0 / 10%), 0 -10px 13px 0 rgb(0 0 0 / 10%);
 } */

@@ -11,7 +11,7 @@
     <br>
 
     <div id="category" class="container mt-5 pt-5">
-        <div class="row row-cols-2 row-cols-lg-5 g-5 g-lg-5">
+        <div class="row justify-content-center row-cols-2 row-cols-lg-5 g-5 g-lg-5">
             <div class="card card-product col p-0 mx-3" 
             style="width: 20rem;" 
             v-for="item in items" :key="item.id"
@@ -48,7 +48,6 @@
             <div class="card-body d-table-cell align-middle">
                 <h1 class="card-title svg-title text-success">Come Shop With Us</h1>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
             </div>
             <div class="col-md-6">

@@ -1,9 +1,10 @@
 <template >
+<div class="col summary "> 
 <br>
-<div class="container p-5">
-            <h3>Order Summary</h3>
-    <table class="table align-middle "> 
-    <thead>
+<div class="container px-5 my-5  tableFixHead">
+    <table class="table table-fixed align-middle "> 
+    <thead class="bg-light">
+        <tr><th class="border-bottom-0" colspan="4"><h3>Order Summary</h3></th></tr>
         <tr>
         <th scope="col">Product</th>
         <th scope="col">Price</th>
@@ -36,10 +37,10 @@
             <td><h5 class="text-center">GH₵{{item.quantity * item.price}}</h5></td>
         </tr>
     </tbody>
-    <tfoot>
+    <tfoot class="bg-white">
         <tr>
-            <td></td>
-            <td colspan="3" >
+            <td class="border-bottom-0"></td>
+            <td colspan="3" class="border-bottom-0" >
                 <h4>Sub-Total <h4 class="float-end mx-3">GH₵{{subTotal}}</h4></h4>
                 <p class="text-muted text-end">Shipping will be calculated next</p>
             </td>
@@ -47,12 +48,43 @@
     </tfoot>
 </table>
 </div>
+</div>
 </template>
 <script>
 export default {
     data() {
         return {
             cart:[
+                {   
+                    id: 45201,
+                    title: 'adidas',
+                    quantity: 1,
+                    price: 352.00,
+                    image: '../images/daniel-storek-JM-qKEd1GMI-unsplash.jpg'
+                },
+                {   
+                    id: 45202,
+                    title: 'sweatz collection-pants,tshirt & snaekers',
+                    quantity: 1,
+                    price: 520.50,
+                    discount:450.00,
+                    image: '../images/mnz-ToLMORRb97Q-unsplash.jpg'
+                }, 
+                {   
+                    id: 45201,
+                    title: 'adidas',
+                    quantity: 1,
+                    price: 352.00,
+                    image: '../images/daniel-storek-JM-qKEd1GMI-unsplash.jpg'
+                },
+                {   
+                    id: 45202,
+                    title: 'sweatz collection-pants,tshirt & snaekers',
+                    quantity: 1,
+                    price: 520.50,
+                    discount:450.00,
+                    image: '../images/mnz-ToLMORRb97Q-unsplash.jpg'
+                }, 
                 {   
                     id: 45201,
                     title: 'adidas',
@@ -104,10 +136,15 @@ export default {
     },
 }
 </script>
-<style >
+<style scoped >
     hr{
         display: none;
     }
+
+    .tableFixHead          { overflow: auto; height: 5in; }
+    .tableFixHead thead, .tableFixHead h3  { position: sticky; top: 0; z-index: 1; }
+    .tableFixHead tfoot { position: sticky; bottom: 0; z-index: 1; }
+
     /* body{
         overflow-x: hidden;
     } */
