@@ -2,7 +2,7 @@
 <br>
     <div class="container-fluid mt-5">
         <div class="row"> 
-            <div class="col">
+            <div class="col-md-6">
                 <div class="container">
                         <ul class="nav nav-tabs mt-3">
                         <li class="nav-item">

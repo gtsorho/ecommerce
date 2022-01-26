@@ -1,11 +1,11 @@
 <template>
 <div>
-<vueper-slides id="home" class="mt-5" ref="myVueperSlides" autoplay :parallax="parallax" :parallax-fixed-content="parallaxFixedContent">
-    <vueper-slide
-        v-for="(slide, i) in slides" :key="i"
-        :image="slide.image"
-        :title="parallaxFixedContent ? slide.title : ''"
-        :content="parallaxFixedContent ? slide.content : ''" />
+    <vueper-slides id="home" class="mt-5" ref="myVueperSlides" autoplay :parallax="parallax" :parallax-fixed-content="parallaxFixedContent">
+        <vueper-slide
+            v-for="(slide, i) in slides" :key="i"
+            :image="slide.image"
+            :title="parallaxFixedContent ? slide.title : ''"
+            :content="parallaxFixedContent ? slide.content : ''" />
     </vueper-slides>
 
     <br>

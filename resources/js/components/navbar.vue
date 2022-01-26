@@ -44,7 +44,7 @@
     </div>
     </nav>
     
-    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas offcanvas-bottom" tabindex="-2" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
         <div class="offcanvas-header">
             <h3 class="offcanvas-title text-center" id="offcanvasBottomLabel"> Categories <i class="bi text-success fs-3 bi-tags"></i></h3>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -52,7 +52,7 @@
         <div class="offcanvas-body small">
             <div class="container">
                 <div class="row justify-content-center mx-auto row-cols-4 row-cols-lg-5 row-cols-sm-2 g-2 g-lg-3">
-                    <div class="col" v-for="(category, index) in categories" :key="index" data-bs-dismiss="offcanvas">
+                    <div class="col-6" v-for="(category, index) in categories" :key="index" data-bs-dismiss="offcanvas">
                         <div class="p-3">
                             <router-link  :to="{name:'Home', hash:'#category'}"><h5 class="text-capitalize cart-text" >{{category}}</h5></router-link>
                         </div>
@@ -110,5 +110,7 @@ export default {
     left: -350% !important;
     min-width: 30rem !important;
 }
-
+.offcanvas-bottom{
+        height: 50% !important;
+}
 </style>

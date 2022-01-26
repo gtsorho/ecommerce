@@ -1,8 +1,10 @@
 <template>
-<div class="container">
+<div class="container-fluid ">
+    <br>
     <h4 class="text-center my-5">Your Cart Items</h4>
 <h6 class="text-center"><router-link :to="{name:'Home', hash:'#category'}">Continue Shopping</router-link></h6>
 
+<div class="table-responsive">
 <table class="table align-middle">
     <thead>
         <tr>
@@ -52,6 +54,7 @@
     </tfoot>
 </table>
 </div>
+</div>
 </template>
 <script>
 import { useRoute } from 'vue-router'
@@ -95,6 +98,7 @@ data() {
     mounted(){
         const route = useRoute()
         console.log(route.query)
+        // for password reset
     },
     computed:{
         subTotal(){

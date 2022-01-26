@@ -7,7 +7,7 @@
                 <h2>LOGO</h2>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             </div>
-            <div class="col">
+            <div class="col  col-md-6">
                 <h5>Pages</h5>
                 <ul class="nav flex-column ">
                     <li class="nav-item">
@@ -22,7 +22,7 @@
                 </ul>
             </div>
 
-            <div class="col">
+            <div class="col col-md-6">
                 <address>
                     <h5>Contact us</h5>
                 <ul class="nav flex-column ">
@@ -34,7 +34,7 @@
                 </ul>
                 </address>
             </div>
-            <div class="col offset-1">
+            <div class="col col-md-6 offset-1">
                 <form >
                 <h5>Subscribe to our newsletter</h5>
                 <p>Monthly digest of whats new and exciting from us.</p>

@@ -40,6 +40,20 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        // 'users' => [
+        //     'driver' => 'sanctum',
+        //     'provider' => 'users',
+        // ],
+    
+        'partners' => [
+            'driver' => 'sanctum',
+            'provider' => 'partners',
+        ],
+    
+        'admins' => [
+            'driver' => 'sanctum',
+            'provider' => 'admins',
+        ],
     ],
 
     /*
@@ -63,6 +77,16 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
+        ],
+
+        'partners' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Partners::class,
+        ],
+    
+        'admins' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Admins::class,
         ],
 
         // 'users' => [
@@ -93,6 +117,13 @@ return [
             'expire' => 60,
             'throttle' => 60,
         ],
+        'partners' => [
+            'provider' => 'partners',
+            'table' => 'password_resets',
+            'expire' => 60,
+            'throttle' => 60,
+        ],
+        
     ],
 
     /*

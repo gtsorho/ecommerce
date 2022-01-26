@@ -1,5 +1,5 @@
 <template >
-<div class="col summary "> 
+<div class="col-md-6  summary "> 
 <br>
 <div class="container px-5 my-5  tableFixHead">
     <table class="table table-fixed align-middle "> 

@@ -13,7 +13,7 @@
         </div>  
     </div>
     <div class="col-auto  me-0 m-auto">
-        <div class="card" style="width: 30rem;">
+        <div class="card" style="width: 100%;">
             <div class="card-body">
                 <h5 class="card-title ">Shipping<i class="bi mt-1 ms-2 fs-3 text-success bi-truck"></i></h5>
                 <p class="card-text">{{shippingDetails}}</p>
@@ -22,7 +22,7 @@
 
         <button class="btn btn-success my-5"><i class="bi bi-cart-plus me-2 fs-3 text-light"></i>Add to Cart</button>
 
-        <div class="card" style="width: 30rem;">
+        <div class="card" style="width: 100%;">
             <div class="card-body">
                 <h5 class="card-title">Description</h5>
                 <p class="card-text">{{description}}</p>

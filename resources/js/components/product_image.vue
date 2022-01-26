@@ -1,5 +1,5 @@
 <template>
-    <div class="card" style="width: 40rem; ">
+    <div class="card" style="width: 100%; ">
         <img :src="image" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-text text-center my-4">{{something}}</h5>
