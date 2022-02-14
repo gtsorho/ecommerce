@@ -3,10 +3,10 @@
     <div class=" footer-container ">
         <footer class="pt-2 mx-5">
             <div class="row">
-            <div class="col-4">
-                <h2>LOGO</h2>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            </div>
+                <div class="col-4">
+                    <h2>LOGO</h2>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </div>
             <div class="col  col-md-6">
                 <h5>Pages</h5>
                 <ul class="nav flex-column ">
