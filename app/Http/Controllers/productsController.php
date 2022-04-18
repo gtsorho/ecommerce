@@ -93,7 +93,6 @@ class productsController extends Controller
             $partner->products()->where('productId', $productItem->productId)->update(['image' => $productImage, 'imageUrl' => $image]);
         }
         return response()->json($partner->products()->where('productId', $productItem->productId )->get(), 200);
-
     }
 
 
